@@ -8,6 +8,10 @@ import (
 	"gin-blog/routers"
 )
 
+func hello(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "HEda fuck")
+}
+
 func main() {
 	router := routers.InitRouter()
 
@@ -18,6 +22,7 @@ func main() {
 		WriteTimeout:   setting.WriteTimeout,
 		MaxHeaderBytes: 1 << 20,
 	}
+
 
 	s.ListenAndServe()
 }
