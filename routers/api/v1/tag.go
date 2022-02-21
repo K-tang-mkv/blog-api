@@ -1,13 +1,14 @@
 package v1
 
 import (
-	"log"
+	
 	"net/http"
 
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
+	"gin-blog/pkg/logging"
 	"gin-blog/models"
 	"gin-blog/pkg/e"
 	"gin-blog/pkg/setting"
