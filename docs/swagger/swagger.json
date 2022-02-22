@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/api/v1/tags": {
+            "get": {},
+            "post": {}
+        },
+        "/api/v1/tags/{id}": {
+            "put": {},
+            "delete": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Delete article tag",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":200,\"data\":{},\"msg\":\"ok\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
